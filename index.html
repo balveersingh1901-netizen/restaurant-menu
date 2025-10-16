@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Restaurant Menu</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <h1>The Silver Spoon</h1>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="main-container">
+            <section id="menu-section">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="starters">Starters</button>
+                    <button class="filter-btn" data-category="main-course">Main Course</button>
+                    <button class="filter-btn" data-category="desserts">Desserts</button>
+                    <button class="filter-btn" data-category="beverages">Beverages</button>
+                </div>
+                <h2 style="font-size: 2.8rem;">Menu</h2>
+                <div class="category starters">
+                    <h3>Starters</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <img src="Images/tomato-soup-recipe.jpg" alt="Tomato Soup" />
+                            <div class="item-info">
+                                <h4>Tomato Soup</h4>
+                                <p class="item-desc">A classic creamy tomato soup with herbs.</p>
+                                <p class="price">$5.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/Crispy-spring-rolls.jpg" alt="Spring Rolls" />
+                            <div class="item-info">
+                                <h4>Spring Rolls</h4>
+                                <p class="item-desc">Crispy vegetable spring rolls served with a tangy dipping sauce.</p>
+                                <p class="price">$6.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/download.jpg" alt="Garlic Bread" />
+                            <div class="item-info">
+                                <h4>Garlic Bread</h4>
+                                <p class="item-desc">Toasted bread topped with garlic butter and herbs, perfect as a starter.</p>
+                                <p class="price">$4.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/bruschetta.jpg" alt="Bruschetta" />
+                            <div class="item-info">
+                                <h4>Bruschetta</h4>
+                                <p class="item-desc">Toasted slices of bread topped with fresh diced tomatoes, basil, garlic, and olive oil.</p>
+                                <p class="price">$5.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/stuff-mushrooms.jpg" alt="Stuffed Mushrooms" />
+                            <div class="item-info">
+                                <h4>Stuffed Mushrooms</h4>
+                                <p class="item-desc">Baked mushrooms filled with herbed cream cheese and breadcrumbs.</p>
+                                <p class="price">$7.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/mozzarella-sticks.jpg" alt="Mozzarella Sticks" />
+                            <div class="item-info">
+                                <h4>Mozzarella Sticks</h4>
+                                <p class="item-desc">Crispy fried mozzarella sticks served with marinara dipping sauce.</p>
+                                <p class="price">$6.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category main-course">
+                    <h3>Main Course</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <img src="Images/pasta-alfredo.jpg" alt="Pasta Alfredo" />
+                            <div class="item-info">
+                                <h4>Pasta Alfredo</h4>
+                                <p class="item-desc">Classic fettuccine pasta tossed in a rich and creamy Alfredo sauce.</p>
+                                <p class="price">$11.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/grilled-chicken.jpg" alt="Grilled Chicken" />
+                            <div class="item-info">
+                                <h4>Grilled Chicken</h4>
+                                <p class="item-desc">Juicy, marinated grilled chicken breast served with roasted veggies.</p>
+                                <p class="price">$13.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" />
+                            <div class="item-info">
+                                <h4>Paneer Butter Masala</h4>
+                                <p class="item-desc">Soft paneer cubes simmered in a smooth tomato-based buttery gravy.</p>
+                                <p class="price">$12.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/beef-steak.jpg" alt="Beef Steak" />
+                            <div class="item-info">
+                                <h4>Beef Steak</h4>
+                                <p class="item-desc">Grilled succulent beef steak served with garlic mashed potatoes and seasonal vegetables.</p>
+                                <p class="price">$16.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/fish and chips.jpg" alt="Fish and Chips" />
+                            <div class="item-info">
+                                <h4>Fish and Chips</h4>
+                                <p class="item-desc">Golden fried fish fillets served with crispy fries and tartar sauce.</p>
+                                <p class="price">$14.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/chicken-parmesan.jpg" alt="Chicken Parmesan" />
+                            <div class="item-info">
+                                <h4>Chicken Parmesan</h4>
+                                <p class="item-desc">Breaded chicken breast baked with marinara sauce and melted mozzarella cheese.</p>
+                                <p class="price">$13.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category desserts">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <img src="Images/chocolate-brownie.jpg" alt="Chocolate Brownie" />
+                            <div class="item-info">
+                                <h4>Chocolate Brownie</h4>
+                                <p class="item-desc">Warm, fudgy chocolate brownie with a hint of espresso flavor.</p>
+                                <p class="price">$5.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/ice-cream-sundae.jpg" alt="Ice Cream Sundae" />
+                            <div class="item-info">
+                                <h4>Ice Cream Sundae</h4>
+                                <p class="item-desc">Creamy vanilla ice cream topped with chocolate syrup and nuts.</p>
+                                <p class="price">$4.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/mango-mousse.jpg" alt="Mango Mousse" />
+                            <div class="item-info">
+                                <h4>Mango Mousse</h4>
+                                <p class="item-desc">Light and airy mousse made with ripe mangoes and fresh cream.</p>
+                                <p class="price">$5.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/tiramisu.jpg" alt="Tiramisu" />
+                            <div class="item-info">
+                                <h4>Tiramisu</h4>
+                                <p class="item-desc">Classic Italian layered coffee-flavored dessert with mascarpone and cocoa powder.</p>
+                                <p class="price">$6.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/cheesecake.jpg" alt="Cheesecake" />
+                            <div class="item-info">
+                                <h4>Cheesecake</h4>
+                                <p class="item-desc">Rich cream cheese cake on a buttery graham cracker crust topped with berries.</p>
+                                <p class="price">$6.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/apple pie.jpg" alt="Apple Pie" />
+                            <div class="item-info">
+                                <h4>Apple Pie</h4>
+                                <p class="item-desc">Warm spiced apple filling baked in a flaky crust, served with vanilla ice cream.</p>
+                                <p class="price">$5.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category beverages">
+                    <h3>Beverages</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <img src="Images/lemonade.jpg" alt="Lemonade" />
+                            <div class="item-info">
+                                <h4>Lemonade</h4>
+                                <p class="item-desc">Refreshing homemade lemonade with a hint of mint and lemon zest.</p>
+                                <p class="price">$3.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/iced-tea.jpg" alt="Iced Tea" />
+                            <div class="item-info">
+                                <h4>Iced Tea</h4>
+                                <p class="item-desc">Cool and invigorating iced tea brewed from premium black tea leaves.</p>
+                                <p class="price">$2.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/coffee.jpg" alt="Coffee" />
+                            <div class="item-info">
+                                <h4>Coffee</h4>
+                                <p class="item-desc">Rich and aromatic freshly brewed coffee to complete your meal.</p>
+                                <p class="price">$2.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/hot-chocolate.jpg" alt="Hot Chocolate" />
+                            <div class="item-info">
+                                <h4>Hot Chocolate</h4>
+                                <p class="item-desc">Creamy rich hot chocolate topped with whipped cream and chocolate shavings.</p>
+                                <p class="price">$3.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/orange juice.jpg" alt="Fresh Orange Juice" />
+                            <div class="item-info">
+                                <h4>Fresh Orange Juice</h4>
+                                <p class="item-desc">Cold-pressed fresh orange juice with a hint of natural sweetness.</p>
+                                <p class="price">$3.99</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="Images/mint-mojito.jpg" alt="Mint Mojito" />
+                            <div class="item-info">
+                                <h4>Mint Mojito</h4>
+                                <p class="item-desc">Refreshing blend of lime, mint, and soda water with a splash of sweetness.</p>
+                                <p class="price">$4.49</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <input type="number" class="item-quantity" value="1" min="1" style="width: 50px; margin-left:10px;" />
+                                <button class="remove-from-cart-btn" style="display:none; margin-left:10px;">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="cart-section">
+                <h2>Your Cart</h2>
+                <ul id="cart-items">
+                    <li>No items in cart.</li>
+                </ul>
+            </section>
+        </div>
+        
+        <footer>
+            <p>Contact us: <a href="mailto:info@thesilverspoon.com">info@thesilverspoon.com</a> | 123 Silver Street, Culinary City, Foodland 56789 | &copy; 2025 The Silver Spoon</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
